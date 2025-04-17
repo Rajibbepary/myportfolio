@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from './shared/Navbar';
 
 const Home = () => {
     return (
         <div>
-            <h1 className='text-red-600'>This is Home</h1>
+        <Navbar/>
+     
         </div>
     );
 };
