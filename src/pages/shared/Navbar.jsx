@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="flex flex-col justify-center items-center">
         <FaCode className="text-2xl font-thin" />
           <h1 className="text-xl font-bold">Rajib</h1>
-          <p className="text-[9px]">Developer</p>
+          <p className="text-[9px] text-green-600">Developer</p>
           
         </div>
         <div>
