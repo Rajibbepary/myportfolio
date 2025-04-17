@@ -1,16 +1,20 @@
 import { useState } from "react";
+import { FaCode } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
-//import logo from '../../assets/my log-05.png'
+
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
     return (
-        <nav className="flex text-[#FFFFFF] justify-between items-center  w-full md:p-6 p-3">
+        <nav className="shadow-md sticky top-0 z-50 bg-[#111122] flex text-[#FFFFFF] justify-between items-center  w-full p-3">
 
-        <div>
-          <h1 className="text-2xl font-semibold">Rajib</h1>
+        <div className="flex flex-col justify-center items-center">
+        <FaCode className="text-2xl font-thin" />
+          <h1 className="text-xl font-bold">Rajib</h1>
+          <p className="text-[9px]">Developer</p>
+          
         </div>
         <div>
         <button className="md:hidden" onClick={() => setOpen(!open)}>
