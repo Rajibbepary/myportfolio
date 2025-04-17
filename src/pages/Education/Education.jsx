@@ -8,13 +8,13 @@ import "react-vertical-timeline-component/style.min.css";
 const Education = () => {
     return (
         <div id="education"  className="my-10 px-4 bg-base-200 border-b-4 border-purple-500 transition-colors duration-300">
-      <h1 className="text-4xl font-bold text-center py-10 ">
+      <h1 className="text-4xl font-bold text-center py-10 text-[#FFFFFF] ">
         Educational Qualifications
       </h1>
       <VerticalTimeline>
         {/* Educational Item 1 */}
         <VerticalTimelineElement
-          date="2020 - 2023"
+          date="2021 - 2025"
           contentStyle={{ background: "#F3E8FF", color: "#6A0DAD" }}
           contentArrowStyle={{ borderRight: "7px solid #6A0DAD" }}
           iconStyle={{ background: "#6A0DAD", color: "#fff" }}
@@ -32,12 +32,11 @@ const Education = () => {
             Bachelor of Computer Science
           </h3>
           <p className="text-[#4B0082] text-[16px] font-semibold mb-4">
-            CCN University of Science and Technology (CCNUST)
+          Suhrawardy  College Affiliated With University of Dhaka
           </p>
           <ul className="list-disc ml-5 space-y-2">
             <li className="text-[#4B0082] text-[14px]">
-              B.Sc in Computer Science and Engineering <br />
-              Completed in 2024 with CGPA: 3.88 out of 4.00
+            Studied at Department Of Bangla,  Shaheed  <br />Suhrawardy  College Affiliated With University of Dhaka
             </li>
           </ul>
         </VerticalTimelineElement>
@@ -62,12 +61,12 @@ const Education = () => {
             Higher Secondary Certificate
           </h3>
           <p className="text-[#303F9F] text-[16px] font-semibold mb-4">
-            Comilla Govt. Women’s College
+            Sodurpur Govt. College
           </p>
           <ul className="list-disc ml-5 space-y-2">
             <li className="text-[#303F9F] text-[14px]">
-              HSC in Science <br />
-              Completed in 2019
+              HSC in Arts <br />
+              Completed in 2020
             </li>
           </ul>
         </VerticalTimelineElement>
@@ -92,14 +91,14 @@ const Education = () => {
             Secondary School Certificate
           </h3>
           <p className="text-[#01579B] text-[16px] font-semibold mb-4">
-            Ibn Taimiya School & College
+            Baburchor High School
           </p>
           <ul className="list-disc ml-5 space-y-2">
             <li className="text-[#01579B] text-[14px]">
-              SSC in Science
+              SSC in Arts
             </li>
             <li className="text-[#01579B] text-[14px]">
-              Completed in 2017
+              Completed in 2018
             </li>
           </ul>
         </VerticalTimelineElement>
