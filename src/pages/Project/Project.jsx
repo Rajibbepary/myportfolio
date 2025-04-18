@@ -5,48 +5,39 @@ import img2 from '../../assets/react-router (1).png';
 import img3 from '../../assets/Screenshot_116.png';
 import img4 from '../../assets/firebase.png';
 import img5 from '../../assets/logo-mongodb-png-mongo-db-shaped-sticker-650.png';
-import project1 from '../../assets/Screenshot_116.png';
-import project2 from '../../assets/Screenshot_122.png';
-import project3 from '../../assets/Screenshot_116.png';
-import project4 from '../../assets/Screenshot_122.png'
+import project1 from '../../assets/Screenshot 2025-02-06 231841.png';
+import project2 from '../../assets/Screenshot 2025-04-18 205634.jpg';
+import project3 from '../../assets/Screenshot 2025-02-07 093919.png'
 
 
 const projects = [
   {
     id: 1,
-    title: 'Assignment Submission Website',
+    title: 'Chill Gamer',
     description:
-      "CollabStudy is likely an education-based platform where students can learn together, collaborate on various topics, and share study materials. It may offer online courses, project-based learning, coding problem-solving, and group discussions.",
-    liveLink: 'https://bejewelled-treacle-199141.netlify.app/',
-    githubLink: 'https://github.com/SadiaAfrinMim/Assinment-_submission_prioject',
+      "A detailed description of the project goes here. This is a gamer website. There are different types of games. Users have to login to use it. You can view different types of games. You can review the games. All your reviewed games will be shown.",
+    liveLink: 'https://chill-game-6c5d7.web.app/',
+    githubLink: 'https://github.com/programming-hero-web-course2/b10-a10-client-side-Rajibbepary',
     imgSrc: project1,
   },
   {
     id: 2,
-    title: 'Funding Website',
+    title: 'Volunteer Managment',
     description:
-      'SadiaFund is a funding platform designed to support various causes, projects, and individuals in need of financial assistance. It serves as a crowdfunding website where users can create campaigns to raise funds for personal, charitable, or business-related initiatives.',
-    liveLink: 'https://luminous-praline-615362.netlify.app/',
-    githubLink: 'https://github.com/SadiaAfrinMim/funding_project_10',
+      'A full-stack web application designed to streamline volunteer coordination and event management. Built with React.js for a dynamic user interface, Firebase for authentication and real-time features, Node.js and Express for the backend API, and MongoDB for efficient data storage. The platform allows organizations to post events, manage volunteers, and track participation seamlessly.',
+    liveLink: 'https://volunter-managment.web.app/',
+    githubLink: 'https://github.com/Rajibbepary/volunteer-managment-client',
     imgSrc: project2,
   },
+ 
   {
     id: 3,
-    title: 'Cloth Donation Website',
+    title: 'Medical Camp Managment',
     description:
-      'Clothe the Needy 👚 is a compassionate initiative that connects generous donors with individuals in need, ensuring that clothing reaches those who require it most. The platform raises awareness about clothing insecurity and provides a simple yet impactful way for people to contribute to a meaningful cause.',
-    liveLink: 'https://incredible-sable-27d213.netlify.app/donation-campaigns',
-    githubLink: 'https://github.com/SadiaAfrinMim/Cloth_Donation_project',
+      'You want to build a Medical Camp Management System where: Users can add Medical camps. Users can join Medical camps. Users can view the Medical camps they have added. Everyone can see who has posted volunteer camps',
+    liveLink: 'https://medical-camp-43904.web.app/',
+    githubLink: 'https://github.com/Programming-Hero-Web-Course4/b10a12-client-side-Rajibbepary',
     imgSrc: project3,
-  },
-  {
-    id: 3,
-    title: 'NewsSite Website',
-    description:
-      'Welcome to NewsSite, a platform where users can view, manage, and interact with news articles. As an admin, you can manage users, articles, publishers, and more.',
-    liveLink: 'https://simple-project-c9ba2.web.app/',
-    githubLink: 'https://github.com/SadiaAfrinMim/NewsDaily-full-stack-website',
-    imgSrc: project4,
   },
 ];
 
@@ -68,7 +59,7 @@ const Project = () => {
               key={project.id}
               className="rounded-lg flex  relative border-2 space-y-4 shadow-lg"
             >
-              <img className="rounded-t-lg w-full flex-1  mx-auto" src={project.imgSrc} alt={project.title} />
+              <img className="rounded-t-lg w-1/2 flex-1  mx-auto" src={project.imgSrc} alt={project.title} />
               <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md">
                 <FaGithub className="text-purple-700 w-6 h-6" />
               </div>
