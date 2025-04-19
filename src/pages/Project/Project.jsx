@@ -7,8 +7,7 @@ import img4 from '../../assets/firebase.png';
 import img5 from '../../assets/logo-mongodb-png-mongo-db-shaped-sticker-650.png';
 import project1 from '../../assets/Screenshot 2025-02-06 231841.png';
 import project2 from '../../assets/Screenshot 2025-04-18 205634.jpg';
-import project3 from '../../assets/Screenshot 2025-02-07 093919.png'
-
+import project3 from '../../assets/Screenshot 2025-02-07 093919.png';
 
 const projects = [
   {
@@ -29,7 +28,6 @@ const projects = [
     githubLink: 'https://github.com/Rajibbepary/volunteer-managment-client',
     imgSrc: project2,
   },
- 
   {
     id: 3,
     title: 'Medical Camp Managment',
@@ -42,63 +40,76 @@ const projects = [
 ];
 
 const techStackIcons = [img1, img2, img3, img4, img5];
-const Project = () => {
-    return (
-     
 
-<div className="min-h-screen text-[#FFFFFF]">
-        <div className="text-center space-y-8">
-          <h1 className="text-4xl font-bold">My Projects</h1>
-          <h2 className="pb-12 lg:w-9/12 mx-auto text-xl">
+const Project = () => {
+  return (
+    <div className="min-h-screen text-white px-4 py-8 md:px-10 lg:px-20 bg-[#0f172a]">
+      <div className="text-center space-y-8">
+        <h1 className="text-4xl font-bold">My Projects</h1>
+        <h2 className="pb-12 max-w-4xl mx-auto text-lg md:text-xl">
           These projects highlight my skills and experience through practical, real-world applications. Each one includes a brief description along with links to the code repositories and live demos.
-          </h2>
-        </div>
-        <div id="project" className="grid gap-4 grid-cols-1  ">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="rounded-lg flex  relative border-2 space-y-4 shadow-lg"
-            >
-              <img className="rounded-t-lg w-1/2 flex-1  mx-auto" src={project.imgSrc} alt={project.title} />
-              <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md">
-                <FaGithub className="text-purple-700 w-6 h-6" />
-              </div>
-              <div className="space-y-4 flex-1 flex-col grow p-4">
-                <h4 className="text-2xl font-bold">{project.title}</h4>
-                <p>{project.description}</p>
-                <p className="font-bold text-xl">Tech Used:</p>
-                <div className="flex gap-2">
+        </h2>
+      </div>
+
+      <div id="project" className="space-y-8">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="flex flex-col lg:flex-row border-2 border-purple-600 rounded-lg overflow-hidden shadow-lg bg-[#1e293b] relative"
+          >
+            <img
+              className="w-full lg:w-1/2 object-cover"
+              src={project.imgSrc}
+              alt={project.title}
+            />
+
+            <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md z-10">
+              <FaGithub className="text-purple-700 w-6 h-6" />
+            </div>
+
+            <div className="flex-1 p-6 space-y-4">
+              <h4 className="text-2xl font-bold">{project.title}</h4>
+              <p className="text-sm md:text-base">{project.description}</p>
+
+              <div>
+                <p className="font-bold text-lg">Tech Used:</p>
+                <div className="flex flex-wrap gap-3 pt-2">
                   {techStackIcons.map((icon, index) => (
                     <img
                       key={index}
-                      className="w-12 h-10 border rounded-lg shadow-md"
+                      className="w-10 h-10 border rounded-md shadow-md"
                       src={icon}
                       alt={`Tech Icon ${index}`}
                     />
                   ))}
                 </div>
-                <div className="flex grow items-end pb-4 justify-between">
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <button className="btn border-2 p-2 rounded-md">Live Preview</button>
-                  </a>
-                  <div>
-                    <img
-                      className="w-8 h-8 animate-ping mx-auto duration-3000"
-                      src="https://img.icons8.com/?size=100&id=IEHzNvjQmNPF&format=png&color=7950F2"
-                      alt="Ping Icon"
-                    />
-                  </div>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <button className="btn border-2 p-2 rounded-md">View Github</button>
-                  </a>
-                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-between items-center">
+                <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                  <button className="border border-purple-600 px-4 py-2 rounded-md hover:bg-purple-600 transition">
+                    Live Preview
+                  </button>
+                </a>
+
+                <img
+                  className="w-8 h-8 animate-ping"
+                  src="https://img.icons8.com/?size=100&id=IEHzNvjQmNPF&format=png&color=7950F2"
+                  alt="Ping Icon"
+                />
+
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  <button className="border border-purple-600 px-4 py-2 rounded-md hover:bg-purple-600 transition">
+                    View Github
+                  </button>
+                </a>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-      
-    );
+    </div>
+  );
 };
 
 export default Project;
